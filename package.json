@@ -5,7 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "bcrypt": "^3.0.6",
-    "cloudinary": "^1.14.0",
+    "cloudinary": "^1.21.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^3.0.0",
     "cookie-parser": "^1.4.4",
@@ -15,15 +15,18 @@
     "hbs": "^4.1.1",
     "http-errors": "^1.7.3",
     "moment": "^2.26.0",
-    "mongoose": ">=5.7.5",
+    "mongoose": "^5.9.15",
     "morgan": "^1.10.0",
+    "multer": "^1.4.2",
     "multer-storage-cloudinary": "^2.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www",
-    "server": "nodemon ./bin/www -e js,hbs"
+    "dev": "nodemon ./bin/www -e js,hbs"
   },
   "keywords": [],
   "author": "",
